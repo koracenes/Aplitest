@@ -1,0 +1,261 @@
+@charset "utf-8";
+/* CSS Document */
+body {
+font-family: "trebuchet ms", verdana, sans-serif;
+width:100%;
+min-width:1300px;
+margin:0;
+}
+
+#container{
+	margin:0 auto 0 auto;
+	min-width:1300px;
+	position:relative;
+}
+a{
+	color:#003366;
+	text-decoration:none;
+}
+/*==================================================================================================*/
+#header {
+	min-width:1300px;
+	height: 60px;
+	width: 100%;
+	background: #333;
+	padding-top: 8px;
+	text-align: center;
+}
+
+#header h1 {
+font-size: 30px;
+text-transform: uppercase;
+letter-spacing: 0.3em;
+color: #fff;
+}
+/*==================================================================================================*/
+#menu {
+	min-width:1300px;
+	padding: 5px 0 0 0 ;
+	width: 100%;
+	height: 22px;
+	font-size: 14px;
+	font-weight: bold;
+	text-align: center;
+	color: #000000;
+	background-color: #eee;
+	
+}
+#menu a:active,#menu a:visited, #menu a:link{
+	color:black;
+	text-decoration:none;
+}
+.trenutna{
+	text-decoration:underline;
+}
+/*==================================================================================================*/
+#main {
+	position:absolute;
+	top:86px;
+	left:210px;
+	margin: 15px 15px 15px 24px;
+	padding: 0px 15px 15px 15px;
+	text-align:left;
+}
+
+
+/*==================================================================================================*/
+#bar {
+	float: left;
+	width: 200px;
+	height:100%;
+	background: linear-gradient(#eee, #ffffff);
+	padding: 0px 10px 10px 10px;
+	margin-right: 0;
+}
+
+#bar input[type=textbox],#bar input[type= password] {
+	width:100%;
+}
+/*==================================================================================================*/
+
+.register_form{
+	display:inline-block;
+	border:1px soldi black;
+}
+
+.demoInputBox{
+	margin:5px;
+	padding: 10px 10px;
+	width: 300px; 
+	height: 25px;
+	font-size: 14px;  
+	color: #555555;
+	vertical-align: middle;
+	background-color: #ffffff;
+	border: 1px solid #E9E9E9;
+	border-radius:7px;
+}
+.demoSelectBox{
+	margin:5px;
+	padding: 10px 10px;
+	width: 320px; 
+	height: 45px;
+	font-size: 14px;  
+	color: #555555;
+	vertical-align: middle;
+	background-color: #ffffff;
+	border: 1px solid #E9E9E9;
+	border-radius:7px;
+}
+
+.info{
+	display:inline-block;
+	width:40%;
+}
+
+.podaci td,.podaci th{
+	margin:5px;
+	padding: 10px 10px;
+	height: 25px;
+	font-size: 20px; 
+}
+
+.btn{
+	height:30px;
+	width:70px;
+	border-radius:7px;
+}
+
+/*=============ADMIN PAGE==================*/
+
+.adminList,.testList{
+	width:100%;
+	border-collapse: collapse;
+}
+.adminList tr:nth-child(even), .testList tr:nth-child(even) {
+	background-color: #f2f2f2;
+	}
+.adminList th,.testList{
+	padding-left:5px;
+	height:30px;
+	border-bottom:1px solid black;
+}
+.adminList td:first-child{
+	width:50px;
+}
+.adminList td:last-child{
+	width:50px;
+}
+.adminList td{
+	padding:5px;
+	width:100px;
+	height:10px;
+	text-align:center;
+}
+.testList td{
+	padding:5px;
+	width:100px;
+	border-bottom:1px solid gray;
+	
+}
+.adminList a{
+	text-decoration:none;
+}
+
+.adminReg{
+	
+	width:550px;
+}
+.adminBox{
+	margin:5px 0 5px 0;
+}
+
+/*=============PROFESOR PAGE==================*/
+
+/*	Smerovi	*/
+.smerovi{
+	float:left;
+	margin: 10px 20px 0 0;
+	padding:15px 0 15px 0;
+	width:400px;
+	height:auto;
+}
+.smerovi a{
+	color:#1a1a1a;
+	text-decoration:none;
+}
+.smerovi li{
+	list-style:none;
+	padding: 7px 10px 5px 10px;
+	font-size:20px;
+}
+
+.smerovi li:hover,.smerovi li:active{
+	background:#f2f2f2;
+}
+/*	PREDMETI	*/
+.predmeti{
+	float:left;
+	margin: 10px 20px 0 0;
+	padding:15px 0 15px 0;
+	width:450px;
+	height:auto;
+}
+.predmeti li,.pitanja li{
+	padding: 5px 10px 5px 10px;
+	font-size:18px;
+}
+.predmeti a{
+	color:#1a1a1a;
+	text-decoration:none;
+}
+.predmeti li:hover{
+	background:#f2f2f2;
+	
+}
+/*	PITANJA	*/
+.form_pitanje{
+	width:450px;
+	display:inline-block;
+}
+.form_pitanje li:hover{
+	background:#d9d9d9;
+	
+}
+.pitanja{
+	margin:0 30px 0 0;
+	width:550px;
+	float:left;
+}
+.pitanja a{
+	text-decoration:none;
+	color:black;
+}
+.pitDesc a{
+	background:red;
+}
+.pitanja li:hover,.pitanja li:active{
+	background:#f2f2f2;
+}
+/*	IZABRANA PITANJA	*/
+
+.testPitanja {
+	width:100%;
+	border-collapse: collapse;
+}
+
+.testPitanja tr:nth-child(even){
+	background-color: #f2f2f2;
+	
+	}
+	.testPitanja tr:hover{
+	background:#ccffcc;
+}
+.testPitanja th{
+	padding-right:5px;
+	height:20px;
+	
+}
+.testPitanja td:first-child{
+	width:10px;
+}
